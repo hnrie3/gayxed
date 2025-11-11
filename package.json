@@ -1,0 +1,38 @@
+{
+  "name": "tng",
+  "version": "1.0.0",
+  "description": "TNG Exploit Top 1",
+  "main": "bootstrap.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --dir",
+    "compile:jsc": "electron ./compile-bytenode.js"
+  },
+  "devDependencies": {
+    "@electron/remote": "^2.0.0",
+    "electron": "^36.6.0",
+    "electron-builder": "^26.0.12",
+    "electron-rebuild": "^3.2.9"
+  },
+  "build": {
+    "appId": "com.tng.tng",
+    "productName": "TNG",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "dir",
+      "icon": "icon.ico"
+    }
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bytenode": "^1.5.7",
+    "crypto-js": "^4.2.0",
+    "edge-js": "^24.0.4",
+    "ps-list": "^8.1.1",
+    "win-version-info": "^6.0.1",
+    "windows-shortcuts": "^0.1.6",
+    "ws": "^8.18.2"
+  }
+}
